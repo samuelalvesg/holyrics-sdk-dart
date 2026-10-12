@@ -1,0 +1,23 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  holyrics_core:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/holyrics_core
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed .
+      - run: dart analyze
+      - name: Generated code is up to date
+        run: |
+          dart run tool/generate_actions.dart
+          dart format lib
+          git diff --exit-code lib
+      - run: dart test

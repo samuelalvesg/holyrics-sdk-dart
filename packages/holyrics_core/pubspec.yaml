@@ -1,0 +1,25 @@
+name: holyrics_core
+description: >-
+  Unofficial Dart & Flutter client for the Holyrics API Server: control
+  presentations, lyrics, playlists, media, settings and more over the local
+  network or the Holyrics cloud relay. Pure Dart.
+version: 0.1.0
+homepage: https://github.com/samuelalvesg/holyrics-sdk-dart
+repository: https://github.com/samuelalvesg/holyrics-sdk-dart
+issue_tracker: https://github.com/samuelalvesg/holyrics-sdk-dart/issues
+topics:
+  - holyrics
+  - church
+  - api-client
+  - presentation
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  http: ^1.2.0
+  crypto: ^3.0.3
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.0

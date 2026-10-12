@@ -1,0 +1,9 @@
+holyrics_sdk
+Copyright 2026 Samuel Gonçalves
+
+doc/api/API-Server.en.md and doc/api/API-Server.pt.md are copies of the
+README files of https://github.com/holyrics/API-Server (commit
+3ab96d2e28fe965f0d788ea1a89f4dcd527ed2d2, 2026-09-15), authored by the
+Holyrics team. They are included for reference to document the API this
+SDK talks to; they are NOT covered by this repository's Apache 2.0 license.
+The upstream repository does not declare a license.
