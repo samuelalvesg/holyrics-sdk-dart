@@ -3,6 +3,10 @@ on:
   pull_request:
   push:
     branches: [main]
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   holyrics_core:
     runs-on: ubuntu-latest
